@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Tic Tac Toe</title>
+</head>
+
+<body>
+	<div id="home">
+		<table id="tbl">
+			<tbody>
+				<tr>
+					<td colspan="3">Tic Tac Toe</td>
+				</tr>
+				<tr>
+					<td><img src="imagens/jogador_1.png"><br>
+						<input id="input_nickname_player1" type="text" maxlength="10" placeholder="Nickname Player 1">
+					</td>
+					<td><img id="play" src="imagens/iniciar.png"></td>
+					<td><img src="imagens/jogador_2.png"><br>
+						<input id="input_nickname_player2" type="text" maxlength="10" placeholder="Nickname Player 2">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="game">
+		<div class="char">
+			<img src="imagens/jogador_1.png">
+			<br>
+			<span id="show_nickname_player1"></span>
+		</div>
+
+		<div class="char">
+			<table>
+				<tr>
+					<td class="border1">
+						<div class="grids" id="a-1"></div>
+					</td>
+					<td class="border1">
+						<div class="grids" id="a-2"></div>
+					</td>
+					<td class="border2">
+						<div class="grids" id="a-3"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="border1">
+						<div class="grids" id="b-1"></div>
+					</td>
+					<td class="border1">
+						<div class="grids" id="b-2"></div>
+					</td>
+					<td class="border2">
+						<div class="grids" id="b-3"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="border3">
+						<div class="grids" id="c-1"></div>
+					</td>
+					<td class="border3">
+						<div class="grids" id="c-2"></div>
+					</td>
+					<td>
+						<div class="grids" id="c-3"></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="char">
+			<img src="imagens/jogador_2.png">
+			<br>
+			<span id="show_nickname_player2"></span>
+		</div class="char">
+	</div>
+
+	<script src="jquery-2.2.1.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
